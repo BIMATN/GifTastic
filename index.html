@@ -59,7 +59,7 @@ $(document).on("click", ".topicButtons", function(event) {
 	console.log("topic button has been clicked");
 	userChoice = $(this).data("value");
 	console.log(userChoice);
-	queryURL = "http://api.giphy.com/v1/gifs/search?q="+userChoice+"&limit=10&api_key=dc6zaTOxFJmzC";
+	queryURL = "https://api.giphy.com/v1/gifs/search?q="+userChoice+"&limit=10&api_key=dc6zaTOxFJmzC";
 	$.ajax({
 	    url: queryURL,
 	    method: "GET"
